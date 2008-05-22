@@ -1,0 +1,62 @@
+Source: sidux-art-erebos
+Section: graphics
+Priority: extra
+Maintainer: Bernard Gray <bernard.gray@gmail.com>
+Uploaders: Stefan Lippers-Hollmann <s.l-h@gmx.de>
+Build-Depends: cdbs, debhelper (>= 7), inkscape, ttf-sidux
+Standards-Version: 3.7.3
+Vcs-Svn: svn://svn.berlios.de/fullstory/sidux-art-wallpaper-nyx/trunk
+Vcs-Browser: http://svn.berlios.de/wsvn/fullstory/sidux-art-wallpaper-nyx/trunk/
+
+Package: sidux-art-gdm-erebos
+Architecture: all
+Depends: gdm
+Description: GDM theme for sidux 2008-02 release
+ the default GDM theme for the 2008-02 (Erebus)
+ sidux release.
+
+Package: sidux-art-kdm-erebos
+Architecture: all
+Depends: kdm
+Description: KDM theme for sidux 2008-02 release
+ the default KDM theme for the 2008-02 (Erebus)
+ sidux release.
+
+Package: sidux-art-ksplash-erebos
+Architecture: all
+Depends: ksplash
+Description: KDE ksplash theme for sidux 2008-02 release
+ the default KDE ksplash theme for the 2008-02 
+ (Erebus) sidux release, using the default ksplash engine
+
+Package: sidux-art-xsplash-erebos
+Architecture: all
+Depends: xfce4-session
+Description: xfce splash theme for sidux 2008-02 release
+ the default xfce splash theme for the 2008-02 
+ (Erebus) sidux release, based on balou theme engine.
+
+Package: sidux-art-wallpaper-erebos
+Architecture: all
+Provides: sidux-art-wallpaper-theme
+Description: sidux wallpaper for 2008-02 release
+ The official wallpaper for the 2008-02 (Erebus)
+ sidux release. 
+
+Package: sidux-art-kde-erebos
+Architecture: all
+Provides: sidux-art-kde-theme
+Depends: sidux-art-ksplash-erebos, sidux-art-kdm-erebos, kde-style-qtcurve, gtk2-engines-qtcurve
+Recommends: sidux-art-wallpaper-erebos, dmz-cursor-theme
+Description: KDE theme for sidux 2008-02 release
+ Virtual package providing ksplash, kdm and KDE themes
+ for sidux 2008-02 (Erebus) release
+
+Package: sidux-art-xfce-erebos
+Architecture: all
+Provides: sidux-art-xfce-theme
+Depends: sidux-art-xsplash-erebos, sidux-art-gdm-erebos
+Recommends: sidux-art-wallpaper-erebos, dmz-cursor-theme
+Description: xfce4 theme for sidux 2008-02 release
+ Virtual package providing xfce-splash and gdm themes
+ for sidux 2008-02 (Erebus) release
