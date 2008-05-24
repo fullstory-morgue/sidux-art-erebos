@@ -1,7 +1,122 @@
 #!/usr/bin/make -f
-  
-include /usr/share/cdbs/1/rules/debhelper.mk
-include /usr/share/cdbs/1/class/makefile.mk
 
+DEB_DESTDIR = $(CURDIR)/debian/tmp/
 
-# Add here any variable or target overrides you need.
+%:
+	dh $@
+
+build:
+	dh build --until auto_build
+	# requires inkscape to be installed
+	@if [ ! -x /usr/bin/inkscape ]; then \
+		echo "ERROR: inkscape not installed!" ; \
+		false ; \
+	fi
+
+	### pkg: sidux-art-wallpaper-erebos ###
+	mkdir -p ${DEB_DESTDIR}/wallpaper/
+
+	# create 1600x1200 wallpaper bitmaps from SVG
+	inkscape --export-width=1600 \
+		--export-height=1200 \
+		--export-png="${DEB_DESTDIR}/wallpaper/sidux-erebos-1600x1200.png" \
+			"wallpaper/sidux-erebos.svg" ;
+	test -r ${DEB_DESTDIR}/wallpaper/sidux-erebos-1600x1200.png
+	
+	# create 1920x1200 wallpaper bitmaps from SVG
+	inkscape --export-width=1920 \
+		--export-height=1200 \
+		--export-png="${DEB_DESTDIR}/wallpaper/sidux-erebos-1920x1200.png" \
+			"wallpaper/sidux-erebos-wide.svg" ;
+	test -r ${DEB_DESTDIR}/wallpaper/sidux-erebos-1920x1200.png
+	
+	### pkg: sidux-art-kdm-erebos ###
+	mkdir -p ${DEB_DESTDIR}/dm-kde/
+	
+	# create kdm background bitmap from SVG
+	inkscape --export-width=1600 \
+		--export-height=1200 \
+		--export-png="${DEB_DESTDIR}/dm-kde/background.png" \
+			"dm-kde/background.svg" ;
+	test -r ${DEB_DESTDIR}/dm-kde/background.png
+
+	# create kdm sidux-logo bitmap from svg
+	inkscape --export-width=914 \
+		--export-height=142 \
+		--export-png="${DEB_DESTDIR}/dm-kde/sidux-logo.png" \
+			"dm-kde/sidux-logo.svg" ;
+	test -r ${DEB_DESTDIR}/dm-kde/sidux-logo.png
+
+	# create kdm topbar bitmap from svg
+	inkscape --export-width=1600 \
+		--export-height=100 \
+		--export-png="${DEB_DESTDIR}/dm-kde/topbar.png" \
+			"dm-kde/topbar.svg" ;
+	test -r ${DEB_DESTDIR}/dm-kde/topbar.png
+
+	# create kdm button bitmaps from svg
+	inkscape --export-width=32 \
+		--export-height=32 \
+		--export-png="${DEB_DESTDIR}/dm-kde/arrow.png" \
+			"dm-kde/arrow.svg" ;
+	test -r ${DEB_DESTDIR}/dm-kde/arrow.png
+
+	inkscape --export-width=32 \
+		--export-height=32 \
+		--export-png="${DEB_DESTDIR}/dm-kde/gobutton.png" \
+			"dm-kde/gobutton.svg" ;
+	test -r ${DEB_DESTDIR}/dm-kde/gobutton.png
+
+	### pkg: sidux-art-ksplash-erebos ###
+	mkdir -p ${DEB_DESTDIR}/splash-kde/
+
+	# create splash_bottom bitmap from SVG
+	inkscape --export-area=0:0:400:19 \
+	        --export-dpi=90 \
+		--export-png="${DEB_DESTDIR}/splash-kde/splash_bottom.png" \
+			"splash-kde/splash.svg" ;
+	test -r ${DEB_DESTDIR}/splash-kde/splash_bottom.png
+
+	# create splash_active_bar bitmap from SVG
+	inkscape --export-area=0:19:400:83 \
+	        --export-dpi=90 \
+		--export-png="${DEB_DESTDIR}/splash-kde/splash_active_bar.png" \
+			"splash-kde/splash.svg" ;
+	test -r ${DEB_DESTDIR}/splash-kde/splash_active_bar.png
+
+	# create splash_inactive_bar bitmap from SVG
+	inkscape --export-area=0:83:400:147 \
+	        --export-dpi=90 \
+		--export-png="${DEB_DESTDIR}/splash-kde/splash_inactive_bar.png" \
+			"splash-kde/splash.svg" ;
+	test -r ${DEB_DESTDIR}/splash-kde/splash_inactive_bar.png
+
+	# create splash_top bitmap from SVG
+	inkscape --export-area=0:147:400:395 \
+	        --export-dpi=90 \
+		--export-png="${DEB_DESTDIR}/splash-kde/splash_top.png" \
+			"splash-kde/splash.svg" ;
+	test -r ${DEB_DESTDIR}/splash-kde/splash_top.png
+
+	### pkg: sidux-art-xsplash-erebos ###
+	mkdir -p ${DEB_DESTDIR}/splash-xfce/
+
+	# create xfce splash bitmaps from SVG
+	inkscape --export-width=400 \
+		--export-height=247 \
+		--export-png="${DEB_DESTDIR}/splash-xfce/logo.png" \
+			"splash-xfce/logo.svg" ;
+	test -r ${DEB_DESTDIR}/splash-xfce/logo.png
+
+	# XXX: todo
+	
+	dh build --remaining
+
+clean:
+	dh clean --before clean
+	### sidux-art-wallpaper-erebos ###
+	rm -f   "$(CURDIR)/${DEB_DESTDIR}/wallpaper
+	rm -f   "$(CURDIR)/${DEB_DESTDIR}/dm-kde
+	rm -f   "$(CURDIR)/${DEB_DESTDIR}/splash-xfce
+
+	dh clean --remaining

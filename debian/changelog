@@ -4,5 +4,11 @@ sidux-art-erebos (0.1) unstable; urgency=low
   * add actual normal aspect ratio wallpaper version
   * add kdm artwork - there are binaries there that need to go 
        but they're there as a template until debian/rules is sorted
+  * remove no session and menu buttons (cruft from nyx kdm template)
+  * add kdm export svg to bitmap code to debian/rules 
+  * add copyright info
+  * add ksplash export info to debian/rules
+  * adjust ksplash source so coordinates are easily exportable
+  * configure ksplash Theme.rc to correct name/contact info
 
- -- Bernard Gray <bernard.gray@gmail.com>  Sat, 24 May 2008 01:45:48 +1000
+ -- Bernard Gray <bernard.gray@gmail.com>  Sat, 24 May 2008 14:19:18 +1000

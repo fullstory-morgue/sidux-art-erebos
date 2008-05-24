@@ -1,19 +1,19 @@
 # Default KSplash/ML Theme
 
-[KSplash Theme: default]
-Name = KDE 3.5 Splash Screen
-Description = Waves of change
+[KSplash Theme: sidux-erebos]
+Name = sidux-erebos
+Description = KDE splash theme for sidux 2008-02 (Erebos)
 Version = 1.0
-Author = Lee Olson <clearbeast@gmail.com>
+Author = sidux art team
 
 # Theme behaviour settings.
 Engine = Default
 
 # Should icons blink ala KDE, or not?
-Icons Flashing = true
+Icons Flashing = false
 
 # Show progress bar?
 Always Show Progress = false
 
 # Status text colour
-Label Foreground = #000000
+Label Foreground = #FFFFFF
