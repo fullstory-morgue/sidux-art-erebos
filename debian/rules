@@ -29,6 +29,44 @@ build:
 		--export-png="${DEB_DESTDIR}/wallpaper/sidux-erebos-1920x1200.png" \
 			"wallpaper/sidux-erebos-wide.svg" ;
 	test -r ${DEB_DESTDIR}/wallpaper/sidux-erebos-1920x1200.png
+
+	### pkg: sidux-art-gdm-erebos ###
+	mkdir -p ${DEB_DESTDIR}/dm-kde/
+	
+	# create gdm background bitmap from SVG
+	inkscape --export-width=1600 \
+		--export-height=1200 \
+		--export-png="${DEB_DESTDIR}/dm-kde/background.png" \
+			"dm-kde/background.svg" ;
+	test -r ${DEB_DESTDIR}/dm-kde/background.png
+
+	# create gdm sidux-logo bitmap from svg
+	inkscape --export-width=914 \
+		--export-height=142 \
+		--export-png="${DEB_DESTDIR}/dm-kde/sidux-logo.png" \
+			"dm-kde/sidux-logo.svg" ;
+	test -r ${DEB_DESTDIR}/dm-kde/sidux-logo.png
+
+	# create gdm topbar bitmap from svg
+	inkscape --export-width=1600 \
+		--export-height=100 \
+		--export-png="${DEB_DESTDIR}/dm-kde/topbar.png" \
+			"dm-kde/topbar.svg" ;
+	test -r ${DEB_DESTDIR}/dm-kde/topbar.png
+
+	# create gdm button bitmaps from svg
+	inkscape --export-width=32 \
+		--export-height=32 \
+		--export-png="${DEB_DESTDIR}/dm-kde/arrow.png" \
+			"dm-kde/arrow.svg" ;
+	test -r ${DEB_DESTDIR}/dm-kde/arrow.png
+
+	inkscape --export-width=32 \
+		--export-height=32 \
+		--export-png="${DEB_DESTDIR}/dm-kde/gobutton.png" \
+			"dm-kde/gobutton.svg" ;
+	test -r ${DEB_DESTDIR}/dm-kde/gobutton.png
+
 	
 	### pkg: sidux-art-kdm-erebos ###
 	mkdir -p ${DEB_DESTDIR}/dm-kde/
