@@ -32,8 +32,8 @@ Description: KDE ksplash theme for sidux 2008-02 release
 Package: sidux-art-xsplash-erebos
 Architecture: all
 Depends: xfce4-session
-Description: xfce splash theme for sidux 2008-02 release
- the default xfce splash theme for the 2008-02 
+Description: Xfce splash theme for sidux 2008-02 release
+ the default Xfce splash theme for the 2008-02 
  (Erebus) sidux release, based on balou theme engine.
 
 Package: sidux-art-wallpaper-erebos
@@ -57,6 +57,6 @@ Architecture: all
 Provides: sidux-art-xfce-theme
 Depends: sidux-art-xsplash-erebos, sidux-art-gdm-erebos
 Recommends: sidux-art-wallpaper-erebos, dmz-cursor-theme
-Description: xfce4 theme for sidux 2008-02 release
+Description: Xfce theme for sidux 2008-02 release
  Virtual package providing Xfce-splash and gdm themes
  for sidux 2008-02 (Erebus) release

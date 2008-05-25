@@ -35,5 +35,6 @@ sidux-art-erebos (0.1) unstable; urgency=low
 
   [ Stefan Lippers-Hollmann ]
   * remove unnecessary build-dep on cdbs.
+  * fix lintian warnings regarding the correct Xfce spelling.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun, 25 May 2008 14:21:09 +0200
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun, 25 May 2008 14:35:40 +0200
