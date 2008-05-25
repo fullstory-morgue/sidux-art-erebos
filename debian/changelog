@@ -24,5 +24,8 @@ sidux-art-erebos (0.1) unstable; urgency=low
   svn-buildpackage --svn-ignore --svn-no-links --svn-builder=debuild -us -uc -sa
   * add a gdm screenshot  
   * make the screenshot install in .install script
+  * add jpg screenshot to dm-kdm section to avoid clobbering with *.png
+    regexps
+  * update kdm .install and .greeters to handle it
 
- -- Bernard Gray <bernard.gray@gmail.com>  Sun, 25 May 2008 12:46:38 +1000
+ -- Bernard Gray <bernard.gray@gmail.com>  Sun, 25 May 2008 12:50:22 +1000
