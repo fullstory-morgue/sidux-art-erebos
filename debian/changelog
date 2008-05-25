@@ -16,5 +16,11 @@ sidux-art-erebos (0.1) unstable; urgency=low
     bitmap reuse
   * move ksplash and xfce theme control scripts out of their temp binary dirs
   * add package*.install conf files
+  * change the dump of all binary files from tmp into their respective dirs in
+    the $CURDIR to workaround issue with gdm failing to build
+  * rename wallpaper/*.svg to format dictated by previous packages sidux-*
+  * change spelling in desc of Xfce splash pkg to resolve lintian warning
+  * packages are building with:
+  svn-buildpackage --svn-ignore --svn-no-links --svn-builder=debuild -us -uc -sa
 
- -- Bernard Gray <bernard.gray@gmail.com>  Sun, 25 May 2008 10:56:59 +1000
+ -- Bernard Gray <bernard.gray@gmail.com>  Sun, 25 May 2008 12:27:34 +1000

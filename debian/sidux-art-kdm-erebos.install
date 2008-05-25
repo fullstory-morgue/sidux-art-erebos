@@ -1,3 +1,3 @@
-debian/tmp/dm/*		usr/share/apps/kdm/themes/sidux-erebos
+dm-kdm/*.png		usr/share/apps/kdm/themes/sidux-erebos
 dm-kdm/*.desktop	usr/share/apps/kdm/themes/sidux-erebos
 dm-kdm/erebos.xml	usr/share/apps/kdm/themes/sidux-erebos

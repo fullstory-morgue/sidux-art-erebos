@@ -58,5 +58,5 @@ Provides: sidux-art-xfce-theme
 Depends: sidux-art-xsplash-erebos, sidux-art-gdm-erebos
 Recommends: sidux-art-wallpaper-erebos, dmz-cursor-theme
 Description: xfce4 theme for sidux 2008-02 release
- Virtual package providing xfce-splash and gdm themes
+ Virtual package providing Xfce-splash and gdm themes
  for sidux 2008-02 (Erebus) release
