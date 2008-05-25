@@ -30,5 +30,6 @@ sidux-art-erebos (0.1) unstable; urgency=low
   * remove hardcoded ksplash bitmaps, mv Preview.png into root dir (this will
     be clobbered by *.png regexps, I don't know what consequences that will
     have)
+  * remove hardcoded xfce splash bitmaps
 
- -- Bernard Gray <bernard.gray@gmail.com>  Sun, 25 May 2008 12:53:45 +1000
+ -- Bernard Gray <bernard.gray@gmail.com>  Sun, 25 May 2008 12:57:40 +1000
