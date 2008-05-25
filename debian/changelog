@@ -1,3 +1,9 @@
+sidux-art-erebos (0.3) UNRELEASED; urgency=low
+
+  * NOT RELEASED YET
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 26 May 2008 01:42:06 +0200
+
 sidux-art-erebos (0.2) unstable; urgency=low
 
   * add kde colour theme to kde virt package
