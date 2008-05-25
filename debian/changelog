@@ -1,5 +1,6 @@
 sidux-art-erebos (0.1) unstable; urgency=low
 
+  [ Bernard Gray ]
   * Initial Release.
   * add actual normal aspect ratio wallpaper version
   * add kdm artwork - there are binaries there that need to go 
@@ -32,4 +33,7 @@ sidux-art-erebos (0.1) unstable; urgency=low
     have)
   * remove hardcoded xfce splash bitmaps
 
- -- Bernard Gray <bernard.gray@gmail.com>  Sun, 25 May 2008 12:57:40 +1000
+  [ Stefan Lippers-Hollmann ]
+  * remove unnecessary build-dep on cdbs.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun, 25 May 2008 14:21:09 +0200
