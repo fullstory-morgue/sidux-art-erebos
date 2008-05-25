@@ -1,8 +1,14 @@
 sidux-art-erebos (0.2) UNRELEASED; urgency=low
 
+  [ Stefan Lippers-Hollmann ]
   * NOT RELEASED YET
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun, 25 May 2008 14:45:09 +0200
+  [ Bernard Gray ]
+  * add kde colour theme to kde virt package
+  * install wallpapers to right dir (not usr/share/wallpaper)
+   - will this need cleanup?
+
+ -- Bernard Gray <bernard.gray@gmail.com>  Mon, 26 May 2008 07:00:51 +1000
 
 sidux-art-erebos (0.1) unstable; urgency=low
 
