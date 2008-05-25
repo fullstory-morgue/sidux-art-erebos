@@ -30,42 +30,42 @@ build:
 			"wallpaper/sidux-erebos-wide.svg" ;
 	test -r ${DEB_DESTDIR}/wallpaper/sidux-erebos-1920x1200.png
 
-	### pkg: sidux-art-kdm-erebos ###
-	mkdir -p ${DEB_DESTDIR}/dm-kde/
+	### pkg: sidux-art-*dm-erebos ###
+	mkdir -p ${DEB_DESTDIR}/dm/
 	
-	# create kdm background bitmap from SVG
+	# create dm background bitmap from SVG
 	inkscape --export-width=1600 \
 		--export-height=1200 \
-		--export-png="${DEB_DESTDIR}/dm-kde/background.png" \
+		--export-png="${DEB_DESTDIR}/dm/background.png" \
 			"dm-kde/background.svg" ;
-	test -r ${DEB_DESTDIR}/dm-kde/background.png
+	test -r ${DEB_DESTDIR}/dm/background.png
 
 	# create kdm sidux-logo bitmap from svg
 	inkscape --export-width=914 \
 		--export-height=142 \
-		--export-png="${DEB_DESTDIR}/dm-kde/sidux-logo.png" \
+		--export-png="${DEB_DESTDIR}/dm/sidux-logo.png" \
 			"dm-kde/sidux-logo.svg" ;
-	test -r ${DEB_DESTDIR}/dm-kde/sidux-logo.png
+	test -r ${DEB_DESTDIR}/dm/sidux-logo.png
 
 	# create kdm topbar bitmap from svg
 	inkscape --export-width=1600 \
 		--export-height=100 \
-		--export-png="${DEB_DESTDIR}/dm-kde/topbar.png" \
+		--export-png="${DEB_DESTDIR}/dm/topbar.png" \
 			"dm-kde/topbar.svg" ;
-	test -r ${DEB_DESTDIR}/dm-kde/topbar.png
+	test -r ${DEB_DESTDIR}/dm/topbar.png
 
 	# create kdm button bitmaps from svg
 	inkscape --export-width=32 \
 		--export-height=32 \
-		--export-png="${DEB_DESTDIR}/dm-kde/arrow.png" \
+		--export-png="${DEB_DESTDIR}/dm/arrow.png" \
 			"dm-kde/arrow.svg" ;
-	test -r ${DEB_DESTDIR}/dm-kde/arrow.png
+	test -r ${DEB_DESTDIR}/dm/arrow.png
 
 	inkscape --export-width=32 \
 		--export-height=32 \
-		--export-png="${DEB_DESTDIR}/dm-kde/gobutton.png" \
+		--export-png="${DEB_DESTDIR}/dm/gobutton.png" \
 			"dm-kde/gobutton.svg" ;
-	test -r ${DEB_DESTDIR}/dm-kde/gobutton.png
+	test -r ${DEB_DESTDIR}/dm/gobutton.png
 
 	### pkg: sidux-art-ksplash-erebos ###
 	mkdir -p ${DEB_DESTDIR}/splash-kde/
@@ -116,7 +116,7 @@ clean:
 	dh clean --before clean
 	### sidux-art-wallpaper-erebos ###
 	rm -f   "$(CURDIR)/${DEB_DESTDIR}/wallpaper
-	rm -f   "$(CURDIR)/${DEB_DESTDIR}/dm-kde
+	rm -f   "$(CURDIR)/${DEB_DESTDIR}/dm
 	rm -f   "$(CURDIR)/${DEB_DESTDIR}/splash-xfce
 
 	dh clean --remaining
