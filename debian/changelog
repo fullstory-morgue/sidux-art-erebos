@@ -1,9 +1,5 @@
-sidux-art-erebos (0.3) UNRELEASED; urgency=low
+sidux-art-erebos (0.3) unstable; urgency=low
 
-  [ Stefan Lippers-Hollmann ]
-  * NOT RELEASED YET
-
-  [ Bernard Gray ]
   * add sidux-art-xfce virtual package for use by desktop-defaults-xfce
    - not equivalent kde package is in a separate trunk, I'm assuming it
      is desirable to move it here at some stage...
