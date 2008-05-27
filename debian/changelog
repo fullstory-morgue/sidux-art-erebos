@@ -1,9 +1,5 @@
-sidux-art-erebos (0.4) UNRELEASED; urgency=low
+sidux-art-erebos (0.4) unstable; urgency=low
 
-  [ Stefan Lippers-Hollmann ]
-  * NOT RELEASED YET
-
-  [ Bernard Gray ]
   * fix vcs browser uris to point at correct source trunk
   * enlarge sidux logo on normal aspect ratio wallpaper
   * set ksplash active_bar layer to 100% opacity
