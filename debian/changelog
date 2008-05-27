@@ -6,8 +6,9 @@ sidux-art-erebos (0.4) UNRELEASED; urgency=low
   [ Bernard Gray ]
   * fix vcs browser uris to point at correct source trunk
   * enlarge sidux logo on normal aspect ratio wallpaper
+  * set ksplash active_bar layer to 100% opacity
 
- -- Bernard Gray <bernard.gray@gmail.com>  Tue, 27 May 2008 17:23:36 +1000
+ -- Bernard Gray <bernard.gray@gmail.com>  Tue, 27 May 2008 17:39:42 +1000
 
 sidux-art-erebos (0.3) unstable; urgency=low
 
