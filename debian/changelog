@@ -1,3 +1,9 @@
+sidux-art-erebos (0.4) UNRELEASED; urgency=low
+
+  * NOT RELEASED YET
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue, 27 May 2008 02:21:41 +0200
+
 sidux-art-erebos (0.3) unstable; urgency=low
 
   * add sidux-art-xfce virtual package for use by desktop-defaults-xfce
