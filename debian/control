@@ -5,8 +5,8 @@ Maintainer: Bernard Gray <bernard.gray@gmail.com>
 Uploaders: Stefan Lippers-Hollmann <s.l-h@gmx.de>
 Build-Depends: debhelper (>= 7), inkscape, ttf-sidux
 Standards-Version: 3.7.3
-Vcs-Svn: svn://svn.berlios.de/fullstory/sidux-art-wallpaper-nyx/trunk
-Vcs-Browser: http://svn.berlios.de/wsvn/fullstory/sidux-art-wallpaper-nyx/trunk/
+Vcs-Svn: svn://svn.berlios.de/fullstory/sidux-art-erebos/trunk
+Vcs-Browser: http://svn.berlios.de/wsvn/fullstory/sidux-art-erebos/trunk/
 
 Package: sidux-art-gdm-erebos
 Architecture: all
