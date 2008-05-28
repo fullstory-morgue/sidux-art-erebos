@@ -1,9 +1,5 @@
-sidux-art-erebos (0.5) UNRELEASED; urgency=low
+sidux-art-erebos (0.5) unstable; urgency=low
 
-  [ Stefan Lippers-Hollmann ]
-  * NOT RELEASED YET
-
-  [ Bernard Gray ]
   * update kdm erebos.xml based on BC_Open_Future theme
    - cleaner object placement, and usage
    - has better support for langs and more screen res'
