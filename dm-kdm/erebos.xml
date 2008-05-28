@@ -1,153 +1,160 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE greeter SYSTEM "greeter.dtd">
+<!-- sidux 2008-02 erebos KDM theme -->
 <greeter>
-	
-	<!-- main pic, login pic -->
-	<item type="pixmap">
+
+ 	<item type="pixmap">
 		<normal file="background.png"/>
 		<pos x="0" y="0" width="100%" height="100%"/>
-				
-		<item type="pixmap">
-			<normal file="sidux-logo.png"/>
-			<pos anchor="se" x="-20" y="-40"/>
-		</item>	
-		
-		<item type="rect">
-			<pos anchor="w" x="0%" y="3%" width="100%" height="5%"/>
+	</item>
 
-			<item type="pixmap">
-				<normal file="topbar.png"/>
-				<pos anchor="c" x="50%" y="0%" width="100%"/>
-			</item>	
-
-			<!-- username-label -->
-			<item type="label">
-				<pos anchor="w" x="7" y="21"/>
-				<normal color="#FFFFFF" font="Verdana 12"/>
-				<stock type="username-label"/>
-			</item>
-			
-			<!-- password-label -->
-			<item type="label">
-				<pos anchor="w" x="235" y="21"/>
-				<normal color="#FFFFFF" font="Verdana 12"/>
-				<stock type="password-label"/>
-			</item>
-				
-			<!-- username-entry -->
-			<item type="entry" id="user-entry">
-				<pos anchor="c" x="150" y="21" height="23" width="135"/>
-			</item>
-			
-			<!-- password-entry -->
-			<item type="entry" id="pw-entry">
-				<pos anchor="c" x="375" y="21" height="23" width="135"/>
-			</item>
-			
-			<!-- Login button -->
-			<item type="rect" id="login_button" button="true">	
-				<pos x="450" y="5" width="30" height="40"/>
-				<item type="pixmap">
-					<normal file="gobutton.png" tint="#dddddd"/>
-					<prelight file="gobutton.png"/>
-					<pressed file="gobutton.png" tint="#bbbbbb"/>
-				</item> 
-    			</item>
-
+	<item type="rect">
+		<pos anchor="nw" x="10%" y="20%" width="box" height="box"/>
+		<box orientation="vertical"  >
 			<!-- Welcome on ... -->
 			<item type="label">
-				<pos anchor="w" x="15" y="90"/>
-                                <normal color="#FFFFFF" font="Verdana 18"/>
+				<pos anchor="sw" />
+				<normal color="#FFFFFF" font="Verdana 18"/>
 				<stock type="welcome-label"/>
 			</item>
-	
+		
+			<!-- Clock & Date -->
 			<item type="label" id="clock">
-				<normal color="#FFFFFF" font="Verdana 11"/>
-				<pos anchor="w" x="15" y="120"/>		
+				<pos anchor="nw"/>
+				<normal color="#ffffff" font="Sans 15"/>
 				<text>%c</text>
 			</item>
-	
-			<!-- Login-Error -->
-			<item type="label" id="pam-error">
-				<pos anchor="w" x="15" y="73"/>
-				<normal color="#ffffff" font="Verdana 13"/>
-				<text></text>
-			</item>
-		
-			<!-- capslock-warning -->
-			<item type="label" id="caps-lock-warning">
-				<pos anchor="w" x="15" y="60"/>
-				<normal color="#ff3c00" font="Verdana 13"/>
-				<stock type="caps-lock-warning"/>
-			</item>
-			
-			
-			<item type="rect" id="session_button" button="true">
-				<pos x="85%" y="20" width="10%" height="4%"/>
-				<item type="pixmap">
-					<pos anchor="c" y="4" x="3"/>
-					<normal file="arrow.png" tint="#dddddd"/>
-					<prelight file="arrow.png"/>
-					<pressed file="arrow.png" tint="#bbbbbb"/>
-				</item> 				
-				<item type="label">
-					<normal color="#FFFFFF" font="Verdana 12"/>
-					<prelight color="#DFD8AF" font="Verdana 12"/>
-					<active color="#000000" font="Verdana 12"/>
-					<pos anchor="c" y="4" x="62"/>
-					<stock type="session"/>
-				</item>
-			</item>
-			
-			<!-- menu-button -->
-			<item type="rect" id="system_button" button="true">
-				<show modes="console" type="system"/>
-				<pos x="76%" y="20" width="6%" height="4%"/>
-				<item type="pixmap">
-					<pos anchor="c" y="4" x="3"/>
-					<normal file="arrow.png" tint="#dddddd"/>
-					<prelight file="arrow.png"/>
-					<pressed file="arrow.png" tint="#bbbbbb"/>
-				</item> 				
-				<item type="label">
-					<normal color="#FFFFFF" font="Verdana 12"/>
-					<prelight color="#DFD8AF" font="Verdana 12"/>
-					<active color="#000000" font="Verdana 12"/>
-					<pos anchor="c" y="4" x="37"/>
-					<stock type="system"/>
-				</item>
-			</item>
-		</item>
-	</item>			
-		
-
-	
-	
-	<item type="rect" id="disconnect_button" button="true">
-		<show modes="flexi,remote"/>
-		<pos x="81%" y="92%" width="32" height="60"/>
-		<item type="pixmap">
-			<pos anchor="c" y="36" x="0"/>
-			<normal file="options.png"/>
-			<prelight file="options.png"/>
-			<pressed file="options.png"/>
-		</item> 				
-		<item type="label">
-			<normal color="#B3B938" font="Verdana 11"/>
-			<prelight color="#FFFFFF" font="Verdana 11"/>
-			<active color="#000000" font="Verdana 11"/>
-			<pos anchor="c" y="36" x="30"/>
-			<stock type="disconnect"/>
-	        	<show modes="remote"/>
-		</item>
-		<item type="label">
-			<normal color="#B3B938" font="Verdana 11"/>
-			<prelight color="#FFFFFF" font="Verdana 11"/>
-			<active color="#000000" font="Verdana 11"/>
-			<pos anchor="c" y="10" x="0%"/>
-			<stock type="quit"/>
-	        	<show modes="flexi"/>
-		</item>
+		</box>
 	</item>
-	
+
+
+	<!-- Logo Area -->
+	<item type="rect">
+		<pos anchor="se" x="-50" y="90%" width="box" height="box"/>
+		<box orientation="vertical"  >
+			<item type="pixmap">
+				<normal file="sidux-logo.png" />
+			</item>
+		</box>
+	</item>
+
+
+	<!-- Login Area -->
+	<item type="rect" id="loginbox">
+
+		<normal color="#eeeeee" alpha="0.2"/>
+		<pos x="0" y="0" anchor="nw" width="100%" height="40" />
+
+		<!-- Login Fields -->
+		<item type="rect">
+			<pos anchor="w" x="0%" y="50%" width="box" height="box"/>
+			<box orientation="horizontal" spacing="5" xpadding="10">
+
+				<!-- User Area-->
+				<pos anchor="center" x="0" y="50%"/>
+				<item type="label">
+					<pos anchor="cw" x="0" y="50%"/>
+					<normal color="#FFFFFF" font="Sans 12"/>
+					<stock type="username-label"/>
+				</item>
+				<item type="entry" id="user-entry">
+					<pos anchor="cw" x="0" y="50%" height="25" width="130"/>
+				</item>
+
+				<!-- Password Area-->
+				<item type="label">
+					<pos anchor="cw" x="10" y="50%"/>
+					<normal color="#FFFFFF" font="Sans 12"/>
+					<stock type="password-label"/>
+				</item>
+				<item type="entry" id="pw-entry">
+					<pos anchor="cw" x="10" y="50%" height="25" width="130"/>
+				</item>
+
+				<!-- OK Button -->
+				<item type="rect" id="login_button" button="true">
+					<pos  anchor="cw"  x="5" y="53%" width="box" height="box"/>
+					<box orientation="horizontal" spacing="1" xpadding="10">
+						<item type="pixmap">
+							<normal file="gobutton.png" />
+							<prelight file="gobutton.png"/>
+							<active file="gobutton.png" tint="#20d612"/>
+						</item>
+					</box>
+				</item>
+
+
+			</box>
+		</item>
+		<!-- KDM menu buttons -->
+		<item type="rect">
+			<pos anchor="ne" x="-1" y="15%" width="box" height="box"/>
+			<box orientation="horizontal" spacing="5" xpadding="10">
+                        <!-- Session Menu -->
+                        <item type="rect" id="session_button" button="true">
+                                <pos y="0" x="0" width="box" height="box"/>
+                                <box orientation="horizontal" spacing="7" xpadding="5">
+                                        <item type="pixmap">
+                                                <normal file="arrow.png"/>
+                                                <prelight file="arrow.png" tint="#90da90"/>
+                                                <active file="arrow.png" tint="#20d612"/>
+                                        </item>
+
+                                        <item type="label">
+                                                <normal color="#eeeeee" font="Sans 13"/>
+                                                <prelight color="#90da90" font="Sans 13"/>
+                                                <active color="#20d612" font="Sans 13"/>
+                                                <pos y="50%" anchor="w"/>
+                                                <stock type="session"/>
+                                        </item>
+                                </box>
+                        </item>
+
+                        <!-- System Menu -->
+                        <item type="rect" id="system_button" button="true">
+                                <pos y="0" anchor="nw" width="box" height="box"/>
+                                <box orientation="horizontal" spacing="7" xpadding="10">
+                                        <item type="pixmap">
+                                                <normal file="arrow.png"/>
+                                                <prelight file="arrow.png" tint="#90da90"/>
+                                                <active file="arrow.png" tint="#20d612"/>
+                                        </item>
+
+                                        <item type="label">
+                                                <pos y="50%" anchor="cw"/>
+                                                <normal color="#eeeeee" font="Sans 13"/>
+                                                <prelight color="#90da90" font="Sans 13"/>
+                                                <active color="#20d612" font="Sans 13"/>
+                                                <stock type="system"/>
+                                        </item>
+                                </box>
+                        </item>
+ 
+			</box>
+		</item>
+
+		<!-- Login error -->
+		<fixed>
+		<item type="label" id="pam-error">
+			<pos anchor="n" x="50%" y="110%"/>
+			<normal color="#FFFFFF" font="Sans Bold 14"/>
+			<text></text>
+		</item>
+		</fixed>
+
+		<!-- Caps Lock Warning Area-->
+		<item type="rect" id="caps-lock-warning">
+			<normal color="#ff0000" alpha="0.5"/>
+			<pos anchor="n" x="50%" y="200%" width="box" height="box"/>
+			<box orientation="vertical" min-width="90" xpadding="10" ypadding="5" spacing="0">
+				<item type="label">
+					<normal color="#EEEEEE" font="Sans 15"/>
+					<pos x="50%" anchor="n"/>
+					<!-- Stock label for: You've got capslock on! -->
+					<stock type="caps-lock-warning"/>
+				</item>
+			</box>
+		</item>
+		</item>
+
 </greeter>
