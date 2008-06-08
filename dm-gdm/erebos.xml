@@ -87,9 +87,9 @@
         <pos y="50%" anchor="w" width="box" height="box"/>
             <box orientation="horizontal" spacing="10" xpadding="10">
           <item type="pixmap">
-            <normal file="icon-shutdown.png" tint="#dddddd"/>
-            <prelight file="icon-shutdown.png"/>
-            <active file="icon-shutdown.png" tint="#bbbbbb"/>
+            <normal file="gobutton.png" tint="#dddddd"/>
+            <prelight file="gobutton.png"/>
+            <active file="gobutton.png" tint="#bbbbbb"/>
             <pos y="50%" anchor="w"/>
           </item>
           <item type="label">
