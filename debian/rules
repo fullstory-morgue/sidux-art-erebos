@@ -58,6 +58,12 @@ build:
 			"dm-kdm/arrow.svg" ;
 	test -r ${CURDIR}/dm-gdm/arrow.png
 
+	inkscape --export-width=32 \
+		--export-height=32 \
+		--export-png="${CURDIR}/dm-gdm/gobutton.png" \
+			"dm-gdm/gobutton.svg" ;
+	test -r ${CURDIR}/dm-gdm/gobutton.png
+
 	### pkg: sidux-art-kdm-erebos ###
 	mkdir -p ${CURDIR}/dm-kdm/
 	
