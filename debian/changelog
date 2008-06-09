@@ -1,8 +1,12 @@
 sidux-art-erebos (0.7) UNRELEASED; urgency=low
 
+  [ Stefan Lippers-Hollmann ]
   * NOT RELEASED YET
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun, 08 Jun 2008 16:49:26 +0200
+  [ Bernard Gray ]
+  * remove sidux logo from xfce splash to closer resemble ksplash
+
+ -- Bernard Gray <bernard.gray@gmail.com>  Mon, 09 Jun 2008 12:48:29 +1000
 
 sidux-art-erebos (0.6) unstable; urgency=low
 
