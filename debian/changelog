@@ -5,8 +5,9 @@ sidux-art-erebos (0.7) UNRELEASED; urgency=low
 
   [ Bernard Gray ]
   * remove sidux logo from xfce splash to closer resemble ksplash
+  * shrink the logo on the normal aspect ratio wallpaper slightly
 
- -- Bernard Gray <bernard.gray@gmail.com>  Mon, 09 Jun 2008 12:48:29 +1000
+ -- Bernard Gray <bernard.gray@gmail.com>  Mon, 09 Jun 2008 12:50:09 +1000
 
 sidux-art-erebos (0.6) unstable; urgency=low
 
