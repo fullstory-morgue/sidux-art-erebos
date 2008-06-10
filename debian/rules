@@ -27,6 +27,31 @@ build:
 		--export-png="${CURDIR}/wallpaper/sidux-erebos-1920x1200.png" \
 			"wallpaper/sidux-erebos-wide.svg" ;
 	test -r ${CURDIR}/wallpaper/sidux-erebos-1920x1200.png
+
+	### pkg: sidux-art-wallpaper-erebos-edu ###
+	mkdir -p ${CURDIR}/wallpaper-edu/
+
+	# create 1600x1200 wallpaper bitmaps from SVG
+	inkscape --export-width=1600 \
+		--export-height=1200 \
+		--export-png="${CURDIR}/wallpaper-edu/sidux-erebos-1600x1200.png" \
+			"wallpaper-edu/sidux-erebos-1600x1200.svg" ;
+	test -r ${CURDIR}/wallpaper-edu/sidux-erebos-1600x1200.png
+	
+	# create 1920x1200 wallpaper bitmaps from SVG
+	inkscape --export-width=1920 \
+		--export-height=1200 \
+		--export-png="${CURDIR}/wallpaper-edu/sidux-erebos-1920x1200.png" \
+			"wallpaper-edu/sidux-erebos-1920x1200.svg" ;
+	test -r ${CURDIR}/wallpaper-edu/sidux-erebos-1920x1200.png
+	
+	# create 1280x1024 wallpaper bitmaps from SVG
+	inkscape --export-width=1280 \
+		--export-height=1024 \
+		--export-png="${CURDIR}/wallpaper-edu/sidux-erebos-1280x1024.png" \
+			"wallpaper-edu/sidux-erebos-1280x1024.svg" ;
+	test -r ${CURDIR}/wallpaper-edu/sidux-erebos-1280x1024.png
+	
 	### pkg: sidux-art-gdm-erebos ###
 	mkdir -p ${CURDIR}/dm-gdm/
 	
