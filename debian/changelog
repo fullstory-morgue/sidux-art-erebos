@@ -10,8 +10,9 @@ sidux-art-erebos (0.7) UNRELEASED; urgency=low
   * migrate sidux-art-wallpaper-erebos-edu source to this package 
   * add sidux-erebos/domino colour scheme definition file
   * remove dependencies on *qtcurve* in kde art packages
+  * change internal name on the kcsrc colour theme file 
 
- -- Bernard Gray <bernard.gray@gmail.com>  Wed, 11 Jun 2008 14:11:35 +1000
+ -- Bernard Gray <bernard.gray@gmail.com>  Wed, 11 Jun 2008 14:23:57 +1000
 
 sidux-art-erebos (0.6) unstable; urgency=low
 
