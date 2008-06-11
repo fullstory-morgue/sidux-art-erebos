@@ -8,8 +8,10 @@ sidux-art-erebos (0.7) UNRELEASED; urgency=low
   * shrink the logo on the normal aspect ratio wallpaper slightly
   * set xfce splash bg to black to closer match ksplash
   * migrate sidux-art-wallpaper-erebos-edu source to this package 
+  * add sidux-erebos/domino colour scheme definition file
+  * remove dependencies on *qtcurve* in kde art packages
 
- -- Bernard Gray <bernard.gray@gmail.com>  Tue, 10 Jun 2008 13:05:22 +1000
+ -- Bernard Gray <bernard.gray@gmail.com>  Wed, 11 Jun 2008 14:11:35 +1000
 
 sidux-art-erebos (0.6) unstable; urgency=low
 

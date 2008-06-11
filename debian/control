@@ -55,7 +55,7 @@ Description: sidux-edu wallpaper for 2008-02 release
 Package: sidux-art-kde-erebos
 Architecture: all
 Provides: sidux-art-kde-theme
-Depends: sidux-art-ksplash-erebos, sidux-art-kdm-erebos, kde-style-qtcurve, gtk2-engines-qtcurve
+Depends: sidux-art-ksplash-erebos, sidux-art-kdm-erebos, kde-style-domino, gtk2-qt-engine
 Recommends: sidux-art-wallpaper-erebos, dmz-cursor-theme
 Description: KDE theme for sidux 2008-02 release
  Virtual package providing ksplash, kdm and KDE themes
