@@ -1,9 +1,5 @@
-sidux-art-erebos (0.8) UNRELEASED; urgency=low
+sidux-art-erebos (0.8) unstable; urgency=low
 
-  [ Stefan Lippers-Hollmann ]
-  * NOT RELEASED YET
-
-  [ Bernard Gray ]
   * fix typo in gtk-qt-engine control
 
  -- Bernard Gray <bernard.gray@gmail.com>  Thu, 12 Jun 2008 13:02:36 +1000
