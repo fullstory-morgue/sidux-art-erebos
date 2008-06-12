@@ -1,9 +1,5 @@
-sidux-art-erebos (0.7) UNRELEASED; urgency=low
+sidux-art-erebos (0.7) unstable; urgency=low
 
-  [ Stefan Lippers-Hollmann ]
-  * NOT RELEASED YET
-
-  [ Bernard Gray ]
   * remove sidux logo from xfce splash to closer resemble ksplash
   * shrink the logo on the normal aspect ratio wallpaper slightly
   * set xfce splash bg to black to closer match ksplash
