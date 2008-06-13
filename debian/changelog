@@ -1,9 +1,5 @@
-sidux-art-erebos (0.9) UNRELEASED; urgency=low
+sidux-art-erebos (0.9) unstable; urgency=low
 
-  [ Stefan Lippers-Hollmann ]
-  * NOT RELEASED YET
-
-  [ Bernard Gray ]
   * add userlist to kdm
   * update kdm screenshot
   * begin syncing gdm to kdm layout - cleanup and right-justify menus
