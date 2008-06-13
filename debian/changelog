@@ -1,14 +1,20 @@
 sidux-art-erebos (0.9) UNRELEASED; urgency=low
 
+  [ Stefan Lippers-Hollmann ]
   * NOT RELEASED YET
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu, 12 Jun 2008 16:33:55 +0200
+  [ Bernard Gray ]
+  * add userlist to kdm
+  * update kdm screenshot
+
+ -- Bernard Gray <bernard.gray@gmail.com>  Sat, 14 Jun 2008 00:59:37 +1000
 
 sidux-art-erebos (0.8) unstable; urgency=low
 
   * fix typo in gtk-qt-engine control
+  * add userlist to kdm 
 
- -- Bernard Gray <bernard.gray@gmail.com>  Thu, 12 Jun 2008 13:02:36 +1000
+ -- Bernard Gray <bernard.gray@gmail.com>  Sat, 14 Jun 2008 00:52:45 +1000
 
 sidux-art-erebos (0.7) unstable; urgency=low
 

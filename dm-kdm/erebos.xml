@@ -9,7 +9,7 @@
 	</item>
 
 	<item type="rect">
-		<pos anchor="nw" x="10%" y="20%" width="box" height="box"/>
+		<pos anchor="c" x="50%" y="45%" width="box" height="box"/>
 		<box orientation="vertical"  >
 			<!-- Welcome on ... -->
 			<item type="label">
@@ -17,10 +17,9 @@
 				<normal color="#FFFFFF" font="Verdana 18"/>
 				<stock type="welcome-label"/>
 			</item>
-		
 			<!-- Clock & Date -->
 			<item type="label" id="clock">
-				<pos anchor="nw"/>
+				<pos anchor="nw" />
 				<normal color="#ffffff" font="Sans 15"/>
 				<text>%c</text>
 			</item>
@@ -37,7 +36,6 @@
 			</item>
 		</box>
 	</item>
-
 
 	<!-- Login Area -->
 	<item type="rect" id="loginbox">
@@ -129,17 +127,28 @@
                                         </item>
                                 </box>
                         </item>
- 
+			</box>
+		</item>
+
+		<item type="rect">
+			<pos anchor="w" x="0%" y="50%" width="box" height="box"/>
+			<box orientation="horizontal" spacing="5" xpadding="10">
+				<!-- userlist -->
+				<pos anchor="center" x="0" y="50%"/>
+				<item type="rect" id="userlist">
+					<pos anchor="cw" x="0%" y="120%" width="160" height="140"/>
+					<show type="userlist"/>
+				</item>
 			</box>
 		</item>
 
 		<!-- Login error -->
 		<fixed>
-		<item type="label" id="pam-error">
-			<pos anchor="n" x="50%" y="110%"/>
-			<normal color="#FFFFFF" font="Sans Bold 14"/>
-			<text></text>
-		</item>
+			<item type="label" id="pam-error">
+				<pos anchor="n" x="50%" y="110%"/>
+				<normal color="#FFFFFF" font="Sans Bold 14"/>
+				<text></text>
+			</item>
 		</fixed>
 
 		<!-- Caps Lock Warning Area-->
@@ -155,6 +164,6 @@
 				</item>
 			</box>
 		</item>
-		</item>
+	</item>
 
 </greeter>
