@@ -6,8 +6,9 @@ sidux-art-erebos (0.9) UNRELEASED; urgency=low
   [ Bernard Gray ]
   * add userlist to kdm
   * update kdm screenshot
+  * begin syncing gdm to kdm layout - cleanup and right-justify menus
 
- -- Bernard Gray <bernard.gray@gmail.com>  Sat, 14 Jun 2008 00:59:37 +1000
+ -- Bernard Gray <bernard.gray@gmail.com>  Sat, 14 Jun 2008 01:51:08 +1000
 
 sidux-art-erebos (0.8) unstable; urgency=low
 
