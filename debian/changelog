@@ -1,8 +1,13 @@
 sidux-art-erebos (0.10) UNRELEASED; urgency=low
 
+  [ Stefan Lippers-Hollmann ]
   * NOT RELEASED YET
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat, 14 Jun 2008 00:38:57 +0200
+  [ Bernard Gray ]
+  * move pam/caps-lock errors to useful location
+   - no upload required yet - still got some stuff to work on
+
+ -- Bernard Gray <bernard.gray@gmail.com>  Sat, 14 Jun 2008 17:49:12 +1000
 
 sidux-art-erebos (0.9) unstable; urgency=low
 

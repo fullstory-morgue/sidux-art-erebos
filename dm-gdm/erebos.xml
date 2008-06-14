@@ -111,6 +111,32 @@
 				</item>
 			</box>
 		</item>
+
+		<!-- caps-lock-warning -->
+		<item type="rect" id="caps-lock-warning">
+			<normal color="#ff0000" alpha="0.5"/>
+			<pos x="50%" y="150%" width="box" height="box" anchor="n"/>
+			<box orientation="vertical" min-width="250" xpadding="10" ypadding="5" spacing="0">
+				<item type="label">
+					<normal color="#EEEEEE" font="Sans Bold 14"/>
+					<pos x="50%" anchor="n"/>
+					<stock type="caps-lock-warning"/>
+				</item>
+			</box>
+		</item>
+		
+		<!-- pam-error (login failure etc.) -->
+		<item type="rect" id="pam-error">
+			<pos x="50%" y="250%" anchor="n" width="box" height="box" />
+			<box orientation="vertical" min-width="250" xpadding="10" ypadding="5" spacing="0">
+				<item type="label" id="pam-error">
+					<normal color="#FFFFFF" font="Sans Bold 13"/>
+					<pos x="50%" anchor="n"/>
+					<text></text>
+				</item>
+			</box>
+		</item>
+
 		</fixed>
 	</item>
 
@@ -157,31 +183,6 @@
 		     <text>%c</text>
 		  </item>
 		<!-- clock -->
-        </box>
-    </item>
-
-    <!-- caps-lock-warning -->
-    <item type="rect" id="caps-lock-warning">
-        <normal color="#ffffff" alpha="0.2"/>
-        <pos x="0" y="0" width="100%" height="box" anchor="nw"/>
-        <box orientation="vertical" min-width="250" xpadding="10" ypadding="13" spacing="0">
-            <item type="label">
-                <normal color="#000000" font="Sans Bold 12"/>
-                <pos x="50%" y="50%" anchor="c"/>
-                <stock type="caps-lock-warning"/>
-            </item>
-        </box>
-    </item>
-
-    <!-- pam-error (login failure etc.) -->
-    <item type="rect" id="pam-error">
-        <pos x="0" y="50%" width="100%" height="box" anchor="sw"/>
-        <box orientation="vertical" min-width="250" xpadding="10" ypadding="5" spacing="0">
-            <item type="label" id="pam-error">
-                <normal color="#FFFFFF" font="Sans Bold 12"/>
-                <pos x="50%" y="50%" anchor="c"/>
-            <text></text>
-            </item>
         </box>
     </item>
 
