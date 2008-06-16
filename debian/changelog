@@ -1,9 +1,5 @@
-sidux-art-erebos (0.10) UNRELEASED; urgency=low
+sidux-art-erebos (0.10) unstable; urgency=low
 
-  [ Stefan Lippers-Hollmann ]
-  * NOT RELEASED YET
-
-  [ Bernard Gray ]
   * move pam/caps-lock errors to useful location
   * finish sync of gdm to kdm look, add userlist, move 'welcome on'
   * add kde theme for sidux-erebos 
