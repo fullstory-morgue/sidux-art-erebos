@@ -1,8 +1,12 @@
 sidux-art-erebos (0.11) UNRELEASED; urgency=low
 
+  [ Stefan Lippers-Hollmann ]
   * NOT RELEASED YET
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 16 Jun 2008 02:29:10 +0200
+  [ Bernard Gray ]
+  * centre "welcome on" component of kdm properly
+
+ -- Bernard Gray <bernard.gray@gmail.com>  Wed, 18 Jun 2008 10:49:04 +1000
 
 sidux-art-erebos (0.10) unstable; urgency=low
 

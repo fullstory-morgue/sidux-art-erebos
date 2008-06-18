@@ -9,17 +9,17 @@
 	</item>
 
 	<item type="rect">
-		<pos anchor="c" x="50%" y="45%" width="box" height="box"/>
+		<pos anchor="nw" x="50%" y="45%" width="box" height="box"/>
 		<box orientation="vertical"  >
 			<!-- Welcome on ... -->
 			<item type="label">
-				<pos anchor="sw" />
+				<pos anchor="s" />
 				<normal color="#FFFFFF" font="Verdana 18"/>
 				<stock type="welcome-label"/>
 			</item>
 			<!-- Clock & Date -->
 			<item type="label" id="clock">
-				<pos anchor="nw" />
+				<pos anchor="n" />
 				<normal color="#ffffff" font="Sans 15"/>
 				<text>%c</text>
 			</item>
