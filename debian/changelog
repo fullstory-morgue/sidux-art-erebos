@@ -5,8 +5,9 @@ sidux-art-erebos (0.11) UNRELEASED; urgency=low
 
   [ Bernard Gray ]
   * centre "welcome on" component of kdm properly
+  * revert 18627 - domino -> qtcurve theme
 
- -- Bernard Gray <bernard.gray@gmail.com>  Wed, 18 Jun 2008 10:49:04 +1000
+ -- Bernard Gray <bernard.gray@gmail.com>  Wed, 18 Jun 2008 22:54:04 +1000
 
 sidux-art-erebos (0.10) unstable; urgency=low
 
