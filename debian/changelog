@@ -1,9 +1,5 @@
-sidux-art-erebos (0.12) UNRELEASED; urgency=low
+sidux-art-erebos (0.12) unstable; urgency=low
 
-  [ Stefan Lippers-Hollmann ]
-  * NOT RELEASED YET
-
-  [ Bernard Gray ]
   * sidux-art-xfce moved to it's own source package, so removed from here
 
  -- Bernard Gray <bernard.gray@gmail.com>  Wed, 27 Aug 2008 08:35:16 +1000
