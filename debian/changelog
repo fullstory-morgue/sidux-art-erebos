@@ -1,8 +1,9 @@
 sidux-art-erebos (0.13) UNRELEASED; urgency=low
 
   * NOT RELEASED YET
+  * make lintian happy and depend on ${misc:Depends}.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Wed, 27 Aug 2008 01:36:35 +0200
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 08 Dec 2008 02:54:48 +0100
 
 sidux-art-erebos (0.12) unstable; urgency=low
 
