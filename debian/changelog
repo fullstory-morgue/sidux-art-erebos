@@ -3,7 +3,7 @@ sidux-art-erebos (0.15) unstable; urgency=low
   * ugly hack to remove /etc/default/kdm.d/kdmtheme, which would break on
     upgrades to kde4.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 06 Apr 2009 21:00:34 +0200
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 06 Apr 2009 21:15:54 +0200
 
 sidux-art-erebos (0.14) unstable; urgency=low
 
