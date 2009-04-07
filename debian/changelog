@@ -1,3 +1,9 @@
+sidux-art-erebos (0.17) UNRELEASED; urgency=low
+
+  * NOT RELEASED YET
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue, 07 Apr 2009 23:40:10 +0200
+
 sidux-art-erebos (0.16) unstable; urgency=low
 
   * temporarily drop kde3 themes, until they can be adapted.
